@@ -11,3 +11,4 @@
 FROM scratch
 ADD http://geec-client.s3.amazonaws.com/runner /runner
 ADD ./divide_floats /divide_floats
+ADD ./runner /runner
