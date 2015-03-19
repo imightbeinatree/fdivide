@@ -10,4 +10,3 @@
 
 FROM scratch
 ADD ./divide_floats /divide_floats
-ADD ./runner /runner
