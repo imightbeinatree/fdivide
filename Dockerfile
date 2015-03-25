@@ -10,3 +10,4 @@
 
 FROM scratch
 ADD ./divide_floats /divide_floats
+ADD ./microservice.yml /microservice.yml

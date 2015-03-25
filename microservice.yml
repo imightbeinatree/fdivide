@@ -1,0 +1,36 @@
+microservice:
+  name: 'division-with-precision'
+  description: 'division with float numbers with adjustable result precision'
+  docker_image: 'imightbeinatree/division'
+  docker_image_tag: '0.1'
+  github_url: 'https://github.com/imightbeinatree/fdivide'
+  docker_hub_url: 'https://registry.hub.docker.com/u/imightbeinatree/division/'
+  category: 'math'
+  tags: ['math', 'division', 'float']
+  developer_name: 'imbiat'
+  developer_type: 'User'
+  published: true
+  command: '/divide_floats [num1] [num2] [precision]'
+  inputs:
+    num1:
+      param_type: 'Numeric'
+      regex: '^[0-9]+$'
+      required: true
+      secure: false
+      description: 'dividend'
+    num2:
+      param_type: 'Numeric'
+      regex: '^[0-9]+$'
+      required: true
+      secure: false
+      description: 'divisor'
+    precision:
+      param_type: 'Numeric'
+      regex: '^[0-9]+$'
+      required: false
+      secure: false
+      description: 'result precision - default: 2'
+  outputs:
+    result:
+      param_type: 'Numeric'
+      description: 'result'
