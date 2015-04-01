@@ -1,8 +1,9 @@
 microservice:
+  spec_version: '2.0'
   name: 'division-with-precision'
   description: 'division with float numbers with adjustable result precision'
   docker_image: 'imightbeinatree/division'
-  docker_image_tag: '0.1'
+  docker_image_tag: '0.2'
   github_url: 'https://github.com/imightbeinatree/fdivide'
   docker_hub_url: 'https://registry.hub.docker.com/u/imightbeinatree/division/'
   category: 'math'
